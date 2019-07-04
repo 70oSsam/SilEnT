@@ -1,5 +1,6 @@
-client.on("message", message => {
-    var prefix = "$";
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = "$"
         if (message.author.id === client.user.id) return;
         if (message.guild) {
        let embed = new Discord.RichEmbed()
